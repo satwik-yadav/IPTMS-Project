@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center">
+    <h4 class="display-4">International Patient Management Portal</h4>
+</div>
+
+<hr />
+
+<div class="container">
+    <div class="row">
+        <div class="container col-6">
+            <img src="https://hmsdesk.com/admin/assets/pressrealese/240/5d303cfd7e29b.jpg" style="width: 500px; height: 300px; " />
+        </div>
+        <div class="container col-6 align-content-between" style="margin:auto;width:50%">
+            <p><a class="btn btn-info btn-lg btn-block active" href="@Url.Action("GetPackages", "Home")">View Treatment Services</a></p>
+
+            <p><a class="btn btn-info btn-lg btn-block active" href="@Url.Action("RegisterPatient", "Home")">Register Patient</a></p>
+
+            <p><a class="btn btn-info btn-lg btn-block active" href="@Url.Action("GetInsurerDetail", "Home")">View Insurer Details</a></p>
+
+            <p><a class="btn btn-info btn-lg btn-block active" href="@Url.Action("InitiateClaim", "Home")">View Final Amount</a></p>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<br />
+<br />
+<div>
+    <a asp-action="Logout">Logout</a>
+</div>

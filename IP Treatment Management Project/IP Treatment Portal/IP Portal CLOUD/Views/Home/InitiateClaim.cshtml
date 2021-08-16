@@ -1,0 +1,66 @@
+﻿@model IPTreatmentManagementPortal.Models.InitiateClaim
+
+@{
+    ViewData["Title"] = "InitiateClaim";
+}
+
+
+<h3>Initiate Claim</h3>
+<hr />
+
+@using (Html.BeginForm("GetFinalAmount", "Home", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="InitiateClaim">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="PatientName" class="control-label"></label>
+                    <input asp-for="PatientName" class="form-control" />
+                    <span asp-validation-for="PatientName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Ailment" class="control-label"></label>
+                    <select asp-for="Ailment" class="form-control">
+                        <option value="">Select Ailment</option>
+                        <option value="Orthopaedics">Orthopaedics</option>
+                        <option value="Urology">Urology</option>
+                    </select>
+                    <span asp-validation-for="Ailment" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TreatmentPackageName" class="control-label"></label>
+                    <select asp-for="TreatmentPackageName" class="form-control">
+                        <option value="">Select Package</option>
+                        <option value="Package1">Package 1</option>
+                        <option value="Package2">Package 2</option>
+                    </select>
+                    <span asp-validation-for="TreatmentPackageName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="InsurerName" class="control-label"></label>
+                    <select asp-for="InsurerName" class="form-control">
+                        <option value="">Select Insurer</option>
+                        <option value="LIC">LIC</option>
+                        <option value="HDFC">HDFC</option>
+                        <option value="Bajaj">Bajaj</option>
+                        <option value="SBI">SBI</option>
+                    </select>
+                    <span asp-validation-for="InsurerName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TotalInsuranceCost" class="control-label"></label>
+                    <input asp-for="TotalInsuranceCost" class="form-control" />
+                    <span asp-validation-for="TotalInsuranceCost" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>}
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+

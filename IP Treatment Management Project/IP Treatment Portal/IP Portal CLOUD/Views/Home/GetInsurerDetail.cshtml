@@ -1,0 +1,53 @@
+﻿@model IEnumerable<IPTreatmentManagementPortal.Models.InsurerDetail>
+
+@{
+    ViewData["Title"] = "InsurerDetails";
+}
+
+<h3>Insurer Details</h3>
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.InsurerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsurerPackageName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsuranceAmountLimit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DisbursementDuration)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsurerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsurerPackageName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsuranceAmountLimit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DisbursementDuration)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>
+
+
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

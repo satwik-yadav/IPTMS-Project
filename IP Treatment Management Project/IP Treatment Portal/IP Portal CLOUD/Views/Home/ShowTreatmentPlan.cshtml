@@ -1,0 +1,88 @@
+﻿@model IEnumerable<IPTreatmentManagementPortal.Models.TreatmentPlan>
+
+@{
+    ViewData["Title"] = "ShowTreatmentPlan";
+}
+
+<h1>ShowTreatmentPlan</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PlanId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AilmentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PackageName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TestDetails)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SpecialistName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatmentCommencementDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatmentEndDate)
+            </th>
+           @* <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>*@
+     
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlanId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AilmentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackageName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TestDetails)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SpecialistName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TreatmentCommencementDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TreatmentEndDate)
+            </td>
+           @* <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>*@
+          
+        </tr>
+}
+    </tbody>
+</table>
+
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

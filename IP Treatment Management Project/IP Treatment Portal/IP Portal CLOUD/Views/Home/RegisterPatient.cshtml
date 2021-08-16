@@ -1,0 +1,66 @@
+﻿@model IPTreatmentManagementPortal.Models.Patient
+
+@{
+    ViewData["Title"] = "RegisterPatient";
+}
+
+<h3>Register Patient</h3>
+
+
+<hr />
+
+@using (Html.BeginForm("NewPatient", "Home", FormMethod.Post))
+{
+    <div class="container" style="margin:auto;width:100%;">
+
+        <div class="row">
+            <div class="col-md-8">
+                <form asp-action="NewPatient">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Age" class="control-label"></label>
+                        <input asp-for="Age" class="form-control" />
+                        <span asp-validation-for="Age" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ailment" class="control-label"></label>
+                        <select asp-for="Ailment" class="form-control">
+                            <option value="">Select Ailment</option>
+                            <option value="Orthopaedics">Orthopaedics</option>
+                            <option value="Urology">Urology</option>
+                        </select>
+                        <span asp-validation-for="Ailment" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TreatmentPackageName" class="control-label"></label>
+                        <select asp-for="TreatmentPackageName" class="form-control">
+                            <option value="">Select Package</option>
+                            <option value="Package 1">Package 1</option>
+                            <option value="Package 2">Package 2</option>
+                        </select>
+                        <span asp-validation-for="TreatmentPackageName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CommencementDate" class="control-label"></label>
+                        <input asp-for="CommencementDate" class="form-control" />
+                        <span asp-validation-for="CommencementDate" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Register" class="btn btn-secondary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> }
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+

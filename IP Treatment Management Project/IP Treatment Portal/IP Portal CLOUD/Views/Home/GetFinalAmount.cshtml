@@ -1,0 +1,30 @@
+﻿@model IPTreatmentManagementPortal.Models.FinalAmount
+
+@{
+    ViewData["Title"] = "FinalAmount";
+}
+
+<h3>Balance to be paid</h3>
+
+<hr />
+
+<div>
+    <dl class="row">
+        @*<dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Amount)
+        </dd>*@
+        <dd class="col-sm-10">
+            <h4>
+               Rs. @ViewBag.amt
+            </h4> 
+        </dd>
+       
+     
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,68 @@
+﻿@model IPTreatmentManagementPortal.Models.User
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="text-center">
+    <h3 class="display-4">Welcome to International Patient Treatment Management System</h3>
+
+</div>
+
+
+@using (Html.BeginForm("PostLogin", "Home", FormMethod.Post))
+{
+
+    <form asp-action="PostLogin" asp-validation-summary="ModelOnly">
+        <div class="container" style="margin:auto;width:30%;">
+            <h3 class="text-center pt-5">Login</h3>
+            <br />
+                      
+            <div class="mb-1">
+                @Html.Label("username", "Enter Your Username: ", new { @class = "form-label" })
+                @Html.TextBoxFor(p => p.Username, new { @class = "form-control", @id = "username", autocomplete= "off" })
+                @Html.ValidationMessageFor(p => p.Username)
+            </div>
+            <br />
+            <div class="mb-1">
+                @Html.Label("password", "Enter Your Password: ", new { @class = "form-label" })
+                @Html.PasswordFor(p => p.Password, new { @class = "form-control", @id = "pass" })
+                @Html.ValidationMessageFor(p => p.Password)
+            </div>
+            <br />
+            <button id="submit" class="btn btn-success btn-block" type="submit" style="margin: auto; width: 60%;">Login</button>
+        </div>
+    </form>}
+
+
+
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+
+                        window.onload = function () {
+                            alert("@ViewBag.Message");
+                            window.location.href = "@Url.Action("Login", "Home")";
+                        };
+    </script>
+}
+
+
+
+@if (ViewBag.erroroccured != null)
+{
+<script type="text/javascript">
+
+        window.onload = function () {
+            alert("@ViewBag.erroroccured");
+        }
+</script>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+

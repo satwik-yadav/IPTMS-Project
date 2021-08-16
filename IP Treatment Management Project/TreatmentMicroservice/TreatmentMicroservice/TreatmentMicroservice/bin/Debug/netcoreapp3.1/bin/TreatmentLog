@@ -1,0 +1,57 @@
+INFO  05:17:36 Generating plan...
+INFO  05:21:06 Generating plan...
+ERROR 05:21:29 Some error occurred while generating plan for samru!
+ Object reference not set to an instance of an object.
+INFO  05:29:56 Generating plan...
+INFO  05:29:56 Pateinsts Package List from Offering Microservice is being invoked
+INFO  05:29:59 Pateinsts Specialist List from Offering Microservice is being invoked
+ERROR 05:29:59 Some error occurred while generating plan for samu!
+ Value cannot be null. (Parameter 'uriString')
+INFO  05:34:50 Generating plan...
+INFO  05:34:50 Pateinsts Package List from Offering Microservice is being invoked
+INFO  05:34:51 Pateinsts Specialist List from Offering Microservice is being invoked
+ERROR 05:34:51 Some error occurred while generating plan for samr!
+ Value cannot be null. (Parameter 'uriString')
+INFO  05:44:32 Generating plan...
+INFO  05:44:32 Pateinsts Package List from Offering Microservice is being invoked
+INFO  05:44:33 Pateinsts Specialist List from Offering Microservice is being invoked
+INFO  05:44:33 Patient details along with plan is being saved
+INFO  05:44:33 Plan generated and returned.
+INFO  06:40:50 Generating plan...
+INFO  06:45:37 Generating plan...
+INFO  06:45:37 Pateinsts Package List from Offering Microservice is being invoked
+ERROR 06:45:41 Some error occurred while generating plan for samru!
+ One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  06:48:54 Generating plan...
+INFO  06:48:54 Pateinsts Package List from Offering Microservice is being invoked
+ERROR 06:48:58 Some error occurred while generating plan for samrutha!
+ One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  06:50:40 Generating plan...
+INFO  06:50:40 Pateinsts Package List from Offering Microservice is being invoked
+ERROR 06:50:44 Some error occurred while generating plan for samru!
+ One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  06:52:46 Generating plan...
+INFO  06:52:46 Pateinsts Package List from Offering Microservice is being invoked
+ERROR 06:52:51 Some error occurred while generating plan for samru!
+ One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  06:56:32 Generating plan...
+INFO  06:56:32 Pateinsts Package List from Offering Microservice is being invoked
+INFO  06:56:34 Pateinsts Specialist List from Offering Microservice is being invoked
+INFO  06:56:34 Patient details along with plan is being saved
+INFO  06:56:34 Plan generated and returned.
+INFO  07:01:34 Generating plan...
+INFO  07:01:34 Pateinsts Package List from Offering Microservice is being invoked
+INFO  07:01:35 Pateinsts Specialist List from Offering Microservice is being invoked
+INFO  07:01:35 Patient details along with plan is being saved
+INFO  07:01:35 Plan generated and returned.
+INFO  07:01:40 Generating plan...
+INFO  07:05:02 Generating plan...
+INFO  07:05:02 Pateinsts Package List from Offering Microservice is being invoked
+INFO  07:05:03 Pateinsts Specialist List from Offering Microservice is being invoked
+ERROR 07:05:03 Some error occurred while generating plan for Jame!
+ This instance has already started one or more requests. Properties can only be modified before sending the first request.
+INFO  07:07:10 Generating plan...
+INFO  07:07:10 Pateinsts Package List from Offering Microservice is being invoked
+INFO  07:07:10 Pateinsts Specialist List from Offering Microservice is being invoked
+INFO  07:07:10 Patient details along with plan is being saved
+INFO  07:07:10 Plan generated and returned.
